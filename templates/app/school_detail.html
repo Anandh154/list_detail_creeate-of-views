@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>detailing about {{DOSI.SCname}}</h1>
+        <h2>name of the school{{DOSI.SCname}}</h2>
+        <h2>principal of the school{{DOSI.SCprincipal}}</h2>
+        <h2>location of the school{{DOSI.SClocation}}</h2>
+
+        <h1>students of the related school</h1>
+        {%for sto in DOSI.NTR.all %}
+            <h1>{{sto.sname}}</h1>
+            <h1>{{sto.sage}}</h1>
+            <h2>******************************</h2>
+            
+        {% endfor %}
+         
+
+    </center>
+</body>
+</html>
